@@ -5,11 +5,11 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en">
 <!--<![endif]-->
-	<head>
+<head>
 		<!-- Basic Page Needs
 		================================================== -->
 		<meta charset="utf-8">
-		<title>SalesFetch : contextual intelligence for SalesForce</title>
+		<title>AnyFetch Website</title>
 		<meta name="description" content="Ashley is a One Page Bootstrap 3 Premium website Template, using nice Paralax effect, HTML5, CSS3 and Twitter Bootstrap 3">
 		<meta name="author" content="Little NEKO">
 		<!-- Mobile Specific Metas
@@ -35,7 +35,7 @@
 		<link type="text/css" rel="stylesheet" href="font-icons/custom-icons/css/custom-icons-ie7.css">
 		<!-- Custom css -->
 		<link type="text/css" rel="stylesheet" href="css/layout.css">
-		<link type="text/css" id="colors" rel="stylesheet" href="css/colors.css">
+		<link type="text/css" id="colors" rel="stylesheet" href="css/sea-green.css">
 		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 		<script src="js/modernizr-2.6.1.min.js"></script>
 		<!-- Favicons
@@ -46,7 +46,14 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 		<link rel="apple-touch-icon" sizes="144x144" href="images/apple-touch-icon-144x144.png">
 	</head>
-	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen">
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status">
+				<img src="images/theme-pics/loader.gif" alt=""/><h1 class="noSubtitle">Welcome home</h1>
+			</div>
+		</div>
+		<!-- Preloader -->
 		<!-- Primary Page Layout 
 		================================================== -->
 		<!-- globalWrapper -->
@@ -57,10 +64,10 @@
 					<nav class="navbar navbar-default scrollMenu" role="navigation">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-							<a class="navbar-brand" href="index.html"><img src="images/main-logo.png" alt="Ashley website template"/></a> </div>
+							<a class="navbar-brand" href="index-fullscreen.html"><img src="images/main-logo.png" alt="Ashley website template"/></a> </div>
 							<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
 								<ul class="nav navbar-nav pull-right">
-									<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+									<li class="active"><a href="#homeFullScreen"><i class="icon-home-outline"></i>Home</a> </li>
 									<li><a href="#news"><i class="icon-comment"></i>What</a> </li>
 									<li><a href="#services"><i class="icon-thumbs-up"></i>How</a> </li>
 									<li><a href="#about"><i class="icon-star"></i>About</a> </li>
@@ -75,30 +82,28 @@
 				</header>
 				<!-- header -->
 				<!-- content -->
-				<section id="home" data-stellar-background-ratio="0.5">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7 col-sm-6">
-								<div class="flexslider" id="flexHome">
-									<ul class="slides">
-										<li>
-											<h1>Contextual intelligence</h1>
-											<h2>Engage better, with SalesFetch</h2>
-										</li>
-										<li>
-											<h1>Contextual intelligence</h1>
-											<h2>Know better, with SalesFetch</h2>
-										</li>
-										<li>
-											<h1>Contextual intelligence</h1>
-											<h2>Work better, with SalesFetch</h2>
-										</li>
-									</ul>
-								</div> 
+				<section id="homeFullScreen" data-stellar-background-ratio="0.5">
+					<div class="maskParent" >
+						<div class="paralaxMask"></div>
+						<div id="fullScreenSliderWrapper">
+							<div id="logoBig">
+								<img class="img-responsive" src="images/main-logo-big.png" alt="Little Neko Ashley Bootstrap 3 Parallax One Page" />
 							</div>
-							<div class="col-lg-5 col-sm-6 hidden-xs">
-								<img src="images/theme-pics/home-girl.png" alt="Ashley, Bootstrap website template" class="img-responsive"/>
-							</div>
+
+							<div class="flexslider" id="flexHome">
+								<ul class="slides">
+									<li>
+										<h1>Engage better</h1>							
+									</li>
+									<li>
+										<h1>Know better</h1>
+									</li>
+									<li>
+										<h1>Work better</h1>
+									</li>
+								</ul>
+							</div> 
+							<a href="#about" class="homeBtn btn"><i class="icon-down"></i>learn more</a>
 						</div>
 					</div>
 				</section>
@@ -122,8 +127,8 @@
 							</div>
 				</section>
 				<!-- call to action -->
-				<!-- news -->
 
+				<!-- news -->
 				<section class="slice" id="news">
 					<div class="container imgHover">
 						<div class="row">
@@ -249,7 +254,7 @@
 									</div>
 									<div class="col-xs-9">
 										<h2>Easy Customization</h2>
-										<p>It takes max. 10 minutes to configure SalesFetch for a custom business process.</p>
+										<p>It takes max. 10 minutes to configurate SalesFetch for a custom business process.</p>
 									</div>
 								</div>
 							</div>
@@ -259,7 +264,7 @@
 				<!-- services --> 
 
 
-				<!-- <div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+				<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
 					<div class="maskParent">
 						<div class="paralaxMask"></div>
 						<div class="paralaxText container">
@@ -267,7 +272,7 @@
 							<blockquote class="bigTitle">The smartest CRM <br/>add-on I've ever seen<br/><small>Marc Benioff</small></blockquote>
 						</div>
 					</div>
-				</div> -->
+				</div>
 
 				<section class="slice" id="about">
 					<div class="container">
@@ -863,8 +868,8 @@
 							</div>
 						</section>
 						<!-- End footer -->
-					</div>
-					<!-- global wrapper -->
+				</div>
+				<!-- global wrapper -->
 		<!-- End Document 
 		================================================== -->
 		<script type="text/javascript" src="js-plugin/respond/respond.min.js"></script>
