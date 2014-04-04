@@ -677,15 +677,15 @@ Perso salesfetch landing
 
 .iphone .animationWrapper {
 	position: absolute;
-	top: 16.5%;
+	top: 19.3%;
 	left: 0%;
 	right: 0%;
-	bottom: 17.5%;
-	padding-left: 16px;
+	bottom: 18.2%;
+	padding-left: 14px;
 }
 
 .iphone .animationWrapper .animation {
-	width: 1px;
+	width: 10px;
 	height: 100%;
 	margin: 0 auto;
 	background: red;
