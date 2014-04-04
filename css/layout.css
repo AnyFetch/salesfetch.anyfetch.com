@@ -688,8 +688,53 @@ Perso salesfetch landing
 	width: 10px;
 	height: 100%;
 	margin: 0 auto;
-	background: red;
+	background: white;
+	overflow: hidden;
+	position: relative;
 }
+
+.iphone .animationWrapper .animation .screens {
+	width: 300%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	/*left: -28%;*/
+	-webkit-animation: animate 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animate
+{
+	0% { left: 0%; }
+	25% { left: 0%; }
+	30% { left: -100%; }
+	55% { left: -100%; }
+	60% { left: -200%; }
+	90% { left: -200%; }
+	100% { left: 0%; }
+}
+
+
+.iphone .animationWrapper .animation .screen {
+	width: 33.3%;
+	height: 100%;
+	float: left;
+}
+
+.iphone .animationWrapper .animation .screen:nth-child(1) {
+	background: url('../images/salesfetch1.jpg') no-repeat;
+	background-size: 100% auto;
+}
+
+.iphone .animationWrapper .animation .screen:nth-child(2) {
+	background: url('../images/salesfetch2.jpg') no-repeat;
+	background-size: 100% auto;
+}
+.iphone .animationWrapper .animation .screen:nth-child(3) {
+	background: url('../images/salesfetch3.jpg') no-repeat;
+	background-size: 100% auto;
+}
+
 
 /*.iphone img {
 	width: 100%;
