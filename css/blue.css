@@ -25,9 +25,9 @@
 ================================================== */
 
 /** tabs **/
-.panel-default>.panel-heading {background:#3E6D92; }
+.panel-default>.panel-heading {background:#3498db; }
 .panel-default>.panel-heading:hover {background:#fff; }
-.panel-default>.panel-heading:hover a {color:#3E6D92; }
+.panel-default>.panel-heading:hover a {color:#3498db; }
 .panel-title>a {color:#fff;}
 .panel-title>a:hover {text-decoration: none;}
 
@@ -53,7 +53,7 @@ h2 {
 }
 h2 i {color:#999}
 h2.subTitle:after, h1.noSubtitle:after{
-	background-color:#3E6D92;
+	background-color:#3498db;
 }
 
 /*** parallax sections ***/
@@ -62,7 +62,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 	color:#fff;
 }
 #home, #paralaxSlice1, #paralaxSlice2, #paralaxSlice3, #paralaxSlice4 {
-	background-color:#3E6D92;
+	background-color:#3498db;
 }
 #home {
 	background-image:url('../images/theme-pics/paralax-blue-3.jpg');
@@ -90,26 +90,26 @@ h2.subTitle:after, h1.noSubtitle:after{
 ================================================== */
 
 a {
-	color:#3E6D92;
+	color:#3498db;
 }
 a:hover, .scrollspyNav .active a {
-	color:#3E6D92;
+	color:#3498db;
 }
 ul.iconsList li a {
 	color:#555
 }
 ul.iconsList li a:hover, ul.iconsList i {
-	color:#3E6D92
+	color:#3498db
 }
 
 /*** buttons ***/
 .btn {
-	background:#3E6D92;
+	background:#3498db;
 	color:#fff;
 	border:2px solid #fff;
 }
 .btn:hover {
-	color:#3E6D92;
+	color:#3498db;
 	border-color:#eee;
 	text-shadow:none;
 	background:#fff
@@ -165,7 +165,7 @@ ul.iconsList li a:hover, ul.iconsList i {
 	color:#444;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	background: #3E6D92;
+	background: #3498db;
 	color:#fff;
 }
 
@@ -189,7 +189,7 @@ p.credits {
 	color:#555;
 }
 p.credits a {
-	color:#3E6D92;
+	color:#3498db;
 }
 
 /* END FOOTER 
@@ -216,7 +216,7 @@ p.credits a {
 	color:#FFFFFF;
 }
 .flexslider .flex-direction-nav a {
-	background-color:#3E6D92;
+	background-color:#3498db;
 }
 
 .flexslider .flex-control-paging li a:hover, #sliderWrapper .flex-control-paging li a.flex-active{
@@ -232,7 +232,7 @@ p.credits a {
 }
 .flexslider h1 {
 	color:#fff;
-	background-color:#3E6D92;
+	background-color:#3498db;
 }
 .flexslider h2 {
 	color:#fff;
@@ -264,7 +264,7 @@ nav#filter a {
 	color:#555;
 }
 nav#filter a:hover, nav#filter a.current {
-	background-color: #3E6D92;
+	background-color: #3498db;
 	color:#fff;
 }
 li.filterTitle {
@@ -273,7 +273,7 @@ li.filterTitle {
 section#projectDescription {
 	background-color:#F8F8F8
 }
-.mask{background-color: #3E6D92;}
+.mask{background-color: #3498db;}
 /* END PORTFOLIO
 ================================================== */
 
@@ -318,7 +318,7 @@ section#projectDescription {
 	color:#fff!important;
 }
 .pricingBloc.focusPlan h3 {
-	background-color:#3E6D92;
+	background-color:#3498db;
 	padding:1.25em;
 	color:#fff!important;
 }
@@ -354,7 +354,7 @@ border:none}
 
 /*** Feature box **/
 
-.boxFeature i{color:#3E6D92;} 
+.boxFeature i{color:#3498db;} 
 
 /*** slices ***/
 .slice{
@@ -379,11 +379,11 @@ border:none}
 	color:#444;
 }
 .color1 a.btn{color:#fff;}
-.color1 a.btn:hover{color:#3E6D92;}
+.color1 a.btn:hover{color:#3498db;}
 
 /*color4*/
 .color4, .slice.color4, .bulle.color4, .ctaBox.color4{
-	background-color:#3E6D92;
+	background-color:#3498db;
 	color:#fff;
 }
 
@@ -394,10 +394,10 @@ border:none}
 	background:#fff;
 }
 /*** icons ***/
-.iconRounded {border:2px solid #3E6D92;color:#3E6D92;background-color:#fff;}
-.iconRounded:hover, .color1 .iconRounded:hover{background-color:#3E6D92;color:#fff;}
-.color1 .iconRounded {color:#3E6D92;}
-.color4 .iconRounded {background-color:#FFF;color:#3E6D92;}
+.iconRounded {border:2px solid #3498db;color:#3498db;background-color:#fff;}
+.iconRounded:hover, .color1 .iconRounded:hover{background-color:#3498db;color:#fff;}
+.color1 .iconRounded {color:#3498db;}
+.color4 .iconRounded {background-color:#FFF;color:#3498db;}
 
 /* END NEKO CSS FRAMEWORK
 ================================================== */

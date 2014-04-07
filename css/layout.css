@@ -33,7 +33,7 @@ Description: layout styles
 .input_beta input{
 	background: #FFF;
 	width: 70%;
-	color: #43B6B1;
+	color: #e67e22;
 	border: 2px solid #FFF;
 	padding: 18px 23px;
 	font-size: 22px;
@@ -45,7 +45,7 @@ Description: layout styles
 	float:right;
 	width:30%; 
 	height:63px;
-	background: #43B6B1;
+	background: #e67e22;
 	color: #FFF;
 	border: 2px solid #FFF;
 	padding: 18px 10px;
@@ -692,7 +692,11 @@ body#fullScreen #mainHeader{display:none;}
 .btn.homeBtn {position:relative; background:rgba(255,255,255,0.25);}
 
 #logoBig img{width:300px; margin:auto; position: relative}
-#homeFullScreen #flexHome {margin: 0;}
+#homeFullScreen #flexHome {
+	color:#FFF;
+	margin: 0;
+	font-size:24px;
+}
 #homeFullScreen #flexHome h1, #homeFullScreen #flexHome .flex-control-nav{text-align: center; margin-bottom: 44px;}
 #homeFullScreen .flexslider .slides > li{height:80px;}
 
