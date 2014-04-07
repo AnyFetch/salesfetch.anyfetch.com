@@ -7,6 +7,27 @@
 
 $(document).ready(function() {   
     "use strict";
+
+    $('.input_beta').hide();
+    $('.done_beta').hide();
+    $('.link_beta').show();
+    $('.link_beta').click(function(){
+      $('.input_beta').show();
+      $('.link_beta').hide();
+      $('.done_beta').hide();
+    });
+    $('.send_beta').click(function(){
+        $.ajax({
+          url: "http://neamar.fr/Misc/salesfetch.php",
+          type: "POST",
+          data: { mail : $('#email_beta').val() }
+        }).done(function(res) {
+          $('.done_beta').show();
+          $('.input_beta').hide();
+        });
+    })
+
+
     var $colorsHTML ='<style>.styleSwitcher {background:#fff; position:fixed; top:200px; width:155px;left:-157px;z-index:9999}' +
     '.switcher.dark{background:#555;}' +
     '.styleSwitcher ul li{display:inline-block;}' +
@@ -46,10 +67,10 @@ $(document).ready(function() {
 
     $("body").append($colorsHTML);  
 
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.src = "js-plugin/jquery-cookie/jquery.cookie.js";
-    $("body").append(s);  
+    // var s = document.createElement("script");
+    // s.type = "text/javascript";
+    // s.src = "js-plugin/jquery-cookie/jquery.cookie.js";
+    // $("body").append(s);  
 
 
 

@@ -26,6 +26,52 @@ Description: layout styles
 
 */
 
+.input_beta{
+	position:relative;
+	width: 100%;
+}
+.input_beta input{
+	background: #FFF;
+	width: 70%;
+	color: #43B6B1;
+	border: 2px solid #FFF;
+	padding: 18px 23px;
+	font-size: 22px;
+	height:63px;
+	border-top-left-radius:6px;
+	border-bottom-left-radius:6px;
+}
+.input_beta button{
+	float:right;
+	width:30%; 
+	height:63px;
+	background: #43B6B1;
+	color: #FFF;
+	border: 2px solid #FFF;
+	padding: 18px 10px;
+	font-size: 22px;
+	border-top-right-radius:6px;
+	border-bottom-right-radius:6px;
+	margin-left:-4px;
+	 -webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+}
+.done_beta{
+	color: #FFF;
+	width: 100%;
+	padding: 18px 23px;
+	font-size: 22px;
+	height:63px;
+	text-align: center;
+	text-transform: uppercase;
+}
+#subscribe_beta{
+	width: 100%;
+}
+
 
 /* BOOSTRAP CUSTOMIZATION
 ================================================== */
