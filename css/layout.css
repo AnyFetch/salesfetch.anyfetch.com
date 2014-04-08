@@ -583,7 +583,18 @@ hr {
 /* HEADER
 ================================================== */
 #mainHeader{background:#eee;}
-.navbar-brand{padding-top:30px;padding-left: 0;}
+.navbar-brand{
+	padding-left: 0;
+}
+
+.navbar-brand img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+.navbar-brand span {
+	font-weight: bold;
+}
 
 
 .fixedHeader {
@@ -670,7 +681,7 @@ hr {
 ================================================== */
 /* HOME
 ================================================== */
-body#fullScreen {padding-top: 0}
+body#fullScreen {padding-top: 0; overflow: hidden;}
 body#fullScreen #mainHeader{display:none;}
 #home{padding-top:44px;}
 #mapWrapper{ height:350px; }
