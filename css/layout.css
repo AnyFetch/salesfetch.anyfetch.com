@@ -268,7 +268,6 @@ h1.noSubtitle{
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .paralaxText h2 {
 	font-size: 3.21em;
 	font-weight: 800;
@@ -416,6 +415,9 @@ blockquote:after {
 	content:'\e929';
 	font-family: 'custom-icons';
 	margin-left:0.5em;
+}
+blockquote.author:before, blockquote.author small:before, blockquote.author:after {
+	content: none;
 }
 .quoteRow blockquote:before, .quoteRow blockquote:after {
 	content:none;
