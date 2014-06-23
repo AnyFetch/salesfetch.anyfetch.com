@@ -807,24 +807,24 @@ Perso salesfetch landing
 }
 
 .iphone .animationWrapper .animation .screen:nth-child(1) {
-	background: url('../images/screen1.png') no-repeat;
+	background: url('../images/carousel/screen1.png') no-repeat;
 	background-size: 100% auto;
 }
 
 .iphone .animationWrapper .animation .screen:nth-child(2) {
-	background: url('../images/screen2.png') no-repeat;
+	background: url('../images/carousel/screen2.png') no-repeat;
 	background-size: 100% auto;
 }
 .iphone .animationWrapper .animation .screen:nth-child(3) {
-	background: url('../images/screen3.png') no-repeat;
+	background: url('../images/carousel/screen3.png') no-repeat;
 	background-size: 100% auto;
 }
 .iphone .animationWrapper .animation .screen:nth-child(4) {
-	background: url('../images/screen4.png') no-repeat;
+	background: url('../images/carousel/screen4.png') no-repeat;
 	background-size: 100% auto;
 }
 .iphone .animationWrapper .animation .screen:nth-child(5) {
-	background: url('../images/screen5.png') no-repeat;
+	background: url('../images/carousel/screen5.png') no-repeat;
 	background-size: 100% auto;
 }
 
@@ -1026,17 +1026,6 @@ header#project{padding:22px 0;}
 /* MISCELANIOUS
 ================================================== */
 
-/* Preloader one page */
-#preloader {
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index:10000; /* makes sure it stays on top */
-	background:white;
-	text-align: center;
-}
 
 #status {
 	width:100%;
