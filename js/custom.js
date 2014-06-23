@@ -5,7 +5,7 @@
 
 /*************** COLORS TO BE ERASED WHEN INSTALLING THE THEME ***********/
 
-$(document).ready(function() {   
+$(document).ready(function() {
     "use strict";
 
     $('.input_beta').hide();
@@ -40,7 +40,7 @@ window.onload = function () { "use strict"; gaSSDSLoad(""); }; //load after page
 |--------------------------------------------------------------------------
 | DOCUMENT READY
 |--------------------------------------------------------------------------
-*/  
+*/
 
 $(document).ready(function() {
     "use strict";
@@ -64,7 +64,7 @@ $(document).ready(function() {
      if ($('#fullScreen').length)
      {
 
-    
+
         if ($(window).scrollTop()>= $starter){
            $('#mainHeader').slideDown();
        } else if ($(window).scrollTop()==0){
@@ -105,7 +105,7 @@ $(document).ready(function() {
             })
         });
 
-    }			
+    }
     /*
     |--------------------------------------------------------------------------
     | MAGNIFIC POPUP
@@ -119,7 +119,7 @@ $(document).ready(function() {
          $("a.image-link").click(function (e) {
 
             var items = [];
-            
+
             items.push( { src: $(this).attr('href')  } );
 
             if($(this).data('gallery')){
@@ -128,23 +128,23 @@ $(document).ready(function() {
 
                 $.each( $arraySrc, function( i, v ){
                     items.push( {
-                        src: v 
+                        src: v
                     });
-                });     
+                });
             }
-     
+
             $.magnificPopup.open({
                 type:'image',
                 mainClass: 'mfp-fade',
                 items:items,
                 gallery: {
-                  enabled: true 
+                  enabled: true
                 }
             });
 
             e.preventDefault();
         });
-  
+
     }
 
 
@@ -153,7 +153,7 @@ $(document).ready(function() {
          $('a.image-iframe').magnificPopup({type:'iframe',mainClass: 'mfp-fade'});
     }
 
-    
+
     /*
     |--------------------------------------------------------------------------
     | TOOLTIP
@@ -162,8 +162,8 @@ $(document).ready(function() {
 
     $('.tips').tooltip({placement:'top'});
 
-    
-    
+
+
     /*
     |--------------------------------------------------------------------------
     | COLLAPSE
@@ -174,14 +174,14 @@ $(document).ready(function() {
         $('.accordion-toggle').removeClass('active');
         $(e.target).siblings('.accordion-heading').find('.accordion-toggle').addClass('active');
         $(e.target).siblings('.accordion-heading').find('.accordion-toggle i').toggleClass('icon-plus icon-minus', 200);
-        
+
     });
 
     /*
     |--------------------------------------------------------------------------
     | CONTACT
     |--------------------------------------------------------------------------
-    */   
+    */
     $('.slideContact').click(function(e){
 
         if ( $(window).width() >= 800){
@@ -191,21 +191,21 @@ $(document).ready(function() {
                 $('#contactinfoWrapper').css('margin-left', 0);
                 $('#mapSlideWrapper').css('margin-left', 3000);
                 $('#contactinfoWrapper').fadeToggle();
-                
+
 
             });
-            $('#closeContact').fadeToggle(); 
+            $('#closeContact').fadeToggle();
             return false;
-            
+
         }else{
 
             return true;
-            
+
         }
         e.preventDefault();
     });
-    
-    
+
+
     $('#closeContact').click(function(e){
 
 
@@ -213,36 +213,36 @@ $(document).ready(function() {
             $('#contactinfoWrapper').css('margin-left', 0);
             $('#mapSlideWrapper').css('margin-left', 3000);
         });
-        
+
         $('#contact').slideUp('normal', 'easeOutQuad');
 
         $(this).fadeOut();
 
         e.preventDefault();
-        
+
     });
-    
 
 
 
-    
-    
+
+
+
     /* MAP */
     $('#mapTrigger').click(function(e){
 
 
         $('#mapSlideWrapper').css('display', 'block');
         initialize('mapWrapper');
-        
+
         $('#contactinfoWrapper, #contactinfoWrapperPage').animate({
-            marginLeft:'-2000px' 
-        }, 400, function() {}); 
-        
-        
+            marginLeft:'-2000px'
+        }, 400, function() {});
+
+
         $('#mapSlideWrapper').animate({
-            marginLeft:'25px' 
-        }, 400, function() {});  
-        
+            marginLeft:'25px'
+        }, 400, function() {});
+
         appendBootstrap();
 
         e.preventDefault();
@@ -250,73 +250,73 @@ $(document).ready(function() {
 
     if($('#mapWrapper').length)
     appendBootstrap();
-    
-    
+
+
     $('#mapTriggerLoader').click(function(e){
 
 
         $('#mapSlide').css('display', 'block');
 
         $('#contactSlide').animate({
-            marginLeft:'-2000px' 
-        }, 400, function() {}); 
-        
-        
+            marginLeft:'-2000px'
+        }, 400, function() {});
+
+
         $('#mapSlide').animate({
-            marginLeft:'0' 
+            marginLeft:'0'
         }, 400, function() {
             $('#contactSlide').css('display', 'none');
-        });  
+        });
 
-        
+
         appendBootstrap();
-        
+
         e.preventDefault();
     });
-    
-    
+
+
     $('#mapReturn').click(function(e){
         //$('#mapWrapper').css('margin-bottom', '3em');
-        
+
         $('#contactSlide').css('display', 'block');
         $('#mapSlide').animate({
-            marginLeft:'3000px' 
-        }, 400, function() {});       
-        
+            marginLeft:'3000px'
+        }, 400, function() {});
+
 
         $('#contactSlide').animate({
-            marginLeft:'0' 
+            marginLeft:'0'
         }, 400, function() {
             $('#mapSlide').css('display', 'none');
-        }); 
+        });
 
         e.preventDefault();
-    }); 
+    });
 
     /*
     |--------------------------------------------------------------------------
     | OWL CAROUSEL
     |--------------------------------------------------------------------------
     */
-     if($('#portfolio-carousel').length){ 
-     alert('toto');    
+     if($('#portfolio-carousel').length){
+     alert('toto');
         $("#portfolio-carousel").owlCarousel();
     }
     /*
     |--------------------------------------------------------------------------
     | FLEXSLIDER
     |--------------------------------------------------------------------------
-    */ 
+    */
     if($('#flexHome').length){
 
         $('#flexHome').flexslider({
             animation: "slide",
             controlNav:true,
-            directionNav:false, 
+            directionNav:false,
             touch: true,
             direction: "vertical"
-      
-        });    
+
+        });
     }
 
 
@@ -328,17 +328,17 @@ $(document).ready(function() {
             directionNav: true,
             slideshow: true,
             touch: true,
-            prevText: '<i class="icon-left-open"></i>',           
-            nextText: '<i class="icon-right-open"></i>',   
+            prevText: '<i class="icon-left-open"></i>',
+            nextText: '<i class="icon-right-open"></i>',
             start: function(slider){
-                setTimeout("animateTxt("+slider.currentSlide+", 'in')", 100);  
+                setTimeout("animateTxt("+slider.currentSlide+", 'in')", 100);
             },
             before: function(slider){
-                setTimeout("animateTxt("+slider.currentSlide+")", 100);  
+                setTimeout("animateTxt("+slider.currentSlide+")", 100);
             },
             after: function(slider){
-                setTimeout("animateTxt("+slider.currentSlide+", 'in')", 100);  
-            } 
+                setTimeout("animateTxt("+slider.currentSlide+", 'in')", 100);
+            }
         });
 
     }
@@ -349,11 +349,11 @@ $(document).ready(function() {
         $('.flexScreenSlider').flexslider({
             animation: "slide",
             controlNav:false,
-            touch: true, 
+            touch: true,
             slideshow: true,
-            prevText: '<i class="icon-left-open"></i>',           
-            nextText: '<i class="icon-right-open"></i>'  
-        });    
+            prevText: '<i class="icon-left-open"></i>',
+            nextText: '<i class="icon-right-open"></i>'
+        });
     }
 
 
@@ -364,9 +364,9 @@ $(document).ready(function() {
             controlNav:false,
             touch: true,
             slideshow: true,
-            prevText: '<i class="icon-left-open"></i>',           
-            nextText: '<i class="icon-right-open"></i>'  
-        });    
+            prevText: '<i class="icon-left-open"></i>',
+            nextText: '<i class="icon-right-open"></i>'
+        });
     }
 
 
@@ -377,20 +377,20 @@ $(document).ready(function() {
             controlNav:true,
             touch: true,
             slideshow: true,
-            prevText: '<i class="icon-left-open"></i>',           
-            nextText: '<i class="icon-right-open"></i>'  
-        });    
+            prevText: '<i class="icon-left-open"></i>',
+            nextText: '<i class="icon-right-open"></i>'
+        });
     }
-	
+
 	 if($('.flexApp').length){
 
         $('.flexApp').flexslider({
             animation: "slide",
             controlNav:false,
-            touch: true,	
-            prevText: '<i class="icon-left-open"></i>',           
-            nextText: '<i class="icon-right-open"></i>'  
-        });    
+            touch: true,
+            prevText: '<i class="icon-left-open"></i>',
+            nextText: '<i class="icon-right-open"></i>'
+        });
     }
 
 
@@ -401,7 +401,7 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     | MAIN ROLLOVER EFFECTS
     |--------------------------------------------------------------------------
-    */     
+    */
 
     if($('.imgHover').length){
 
@@ -413,7 +413,7 @@ $(document).ready(function() {
                 var fromTop = ($('.imgWrapper', $this).height()/2 - $('.iconLinks', $this).height()/2);
                 $('.iconLinks', $this).css('margin-top',fromTop);
 
-                $('.mediaHover', $this).height($('.imgWrapper', $this).height());   
+                $('.mediaHover', $this).height($('.imgWrapper', $this).height());
 
                 $('.mask', this).css('height', $('.imgWrapper', this).height());
                 $('.mask', this).css('width', $('.imgWrapper', this).width());
@@ -427,8 +427,8 @@ $(document).ready(function() {
                         $('.iconLinks a').addClass('animated');
 
 
-                        $('.iconLinks a', $this).removeClass('flipOutX'); 
-                        $('.iconLinks a', $this).addClass('bounceInDown'); 
+                        $('.iconLinks a', $this).removeClass('flipOutX');
+                        $('.iconLinks a', $this).addClass('bounceInDown');
 
                     }else{
 
@@ -448,8 +448,8 @@ $(document).ready(function() {
                 $('.mask', this).stop(1).show().animate({marginTop: $('.imgWrapper', $this).height()},200, function() {
 
                     if(Modernizr.csstransitions) {
-                        $('.iconLinks a', $this).removeClass('bounceInDown'); 
-                        $('.iconLinks a', $this).addClass('flipOutX'); 
+                        $('.iconLinks a', $this).removeClass('bounceInDown');
+                        $('.iconLinks a', $this).addClass('flipOutX');
 
                     }else{
                         $('.iconLinks', $this).stop(true, false).fadeOut('fast');
@@ -466,7 +466,7 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     | ROLLOVER BTN
     |--------------------------------------------------------------------------
-    */ 
+    */
 
     $('.socialIcon').hover(
         function () {
@@ -494,18 +494,18 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     | ALERT
     |--------------------------------------------------------------------------
-    */ 
+    */
     $('.alert').delegate('button', 'click', function() {
         $(this).parent().fadeOut('fast');
     });
-    
-    
+
+
     /*
     |--------------------------------------------------------------------------
     | CLIENT
     |--------------------------------------------------------------------------
-    */   
-    
+    */
+
     if($('.colorHover').length){
         var array =[];
         $('.colorHover').hover(
@@ -515,7 +515,7 @@ $(document).ready(function() {
                 array[0] = $(this).attr('src');
                 $(this).attr('src', $(this).attr('src').replace('-off', ''));
 
-            }, 
+            },
 
             function () {
 
@@ -530,19 +530,19 @@ $(document).ready(function() {
     |--------------------------------------------------------------------------
     | Rollover boxIcon
     |--------------------------------------------------------------------------
-    */ 
+    */
     if($('.boxIcon').length){
 
         $('.boxIcon').hover(function() {
             var $this = $(this);
 
-            $this.css('opacity', '1');   
+            $this.css('opacity', '1');
             //$this.find('.boxContent>p').stop(true, false).css('opacity', 0);
             $this.addClass('hover');
             $('.boxContent>p').css('bottom', '-50px');
             $this.find('.boxContent>p').stop(true, false).css('display', 'block');
 
-            $this.find('.iconWrapper i').addClass('triggeredHover');    
+            $this.find('.iconWrapper i').addClass('triggeredHover');
 
             $this.find('.boxContent>p').stop(true, false).animate({
                 'margin-top': '0px'},
@@ -557,11 +557,11 @@ $(document).ready(function() {
 
             $this.find('.boxContent>p').stop(true, false).css('display', 'none');
             $this.find('.boxContent>p').css('margin-top', '250px');
-            $this.find('.iconWrapper i').removeClass('triggeredHover'); 
+            $this.find('.iconWrapper i').removeClass('triggeredHover');
 
 
-        });   
-    }   
+        });
+    }
 
 
 
@@ -597,7 +597,7 @@ $(document).ready(function() {
 |--------------------------------------------------------------------------
 */
 if($('#shareme').length){
-  
+
     $('#shareme').sharrre({
 
     share: {
@@ -619,7 +619,7 @@ if($('#shareme').length){
     enableTracking: true,
       //url:'document.location.href'
   });
-} 
+}
 
 
 
@@ -644,20 +644,20 @@ if($('.previewTrigger').length){
         if(Modernizr.csstransitions) {
             $('.iconWrapper', $this).addClass('animated');
             $('.iconWrapper', $this).css('display', 'block');
-            $('.iconWrapper', $this).removeClass('flipOutX'); 
-            $('.iconWrapper', $this).addClass('bounceInDown'); 
+            $('.iconWrapper', $this).removeClass('flipOutX');
+            $('.iconWrapper', $this).addClass('bounceInDown');
         }else{
             $('.iconWrapper', $this).stop(true, false).fadeIn('fast');
         }
 
     }, function() {
 
-        var $this = $(this); 
+        var $this = $(this);
 
         $this.children('.mask').fadeOut('fast');
 
         if(Modernizr.csstransitions) {
-            $('.iconWrapper', $this).removeClass('bounceInDown'); 
+            $('.iconWrapper', $this).removeClass('bounceInDown');
             $('.iconWrapper', $this).addClass('flipOutX');
             $('.iconWrapper', $this).css('display', 'none');
             $('.iconWrapper', $this).removeClass('animated');
@@ -717,7 +717,7 @@ if($('.activateAppearAnimation').length){
     });
 }
 
-//END DOCUMENT READY   
+//END DOCUMENT READY
 });
 
 
@@ -730,26 +730,20 @@ if($('.activateAppearAnimation').length){
 $(window).load(function() {
 
     "use strict";
-    /*
-    |--------------------------------------------------------------------------
-    | PRELOADER
-    |--------------------------------------------------------------------------
-    */ 
-    $('#status').fadeOut(); // will first fade out the loading animation
-    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-    $('body').delay(350).css({'overflow':'visible'});
+
+    $('body').css({'overflow-y':'visible'});
 
     /*
     |--------------------------------------------------------------------------
     | ISOTOPE USAGE FILTERING
     |--------------------------------------------------------------------------
-    */ 
+    */
     if($('.isotopeWrapper').length){
 
         var $container = $('.isotopeWrapper');
         var $resize = $('.isotopeWrapper').attr('id');
         // initialize isotope
-        
+
         $container.isotope({
             itemSelector: '.isotopeItem',
             resizable: false, // disable normal resizing
@@ -758,7 +752,7 @@ $(window).load(function() {
             }
 
 
-            
+
         });
         var rightHeight = $('#works').height();
         $('#filter a').click(function(){
@@ -780,8 +774,8 @@ $(window).load(function() {
             });
             return false;
         });
-        
-        
+
+
         $(window).smartresize(function(){
             $container.isotope({
                 // update columnWidth to a percentage of container width
@@ -790,9 +784,9 @@ $(window).load(function() {
                 }
             });
         });
-        
 
-}  
+
+}
 
 
 /**PROCESS ICONS**/
@@ -804,13 +798,13 @@ $('.iconBoxV3 a').hover(function() {
         $('i', this).css('-webkit-transform', 'rotateZ(360deg)');
         $('i', this).css('-moz-transform', 'rotateZ(360deg)');
         $('i', this).css('-o-transform', 'rotateZ(360deg)');
-        $('i', this).css('transform', 'rotateZ(360deg)'); 
+        $('i', this).css('transform', 'rotateZ(360deg)');
 
     }else{
 
        $(this).stop(false, true).toggleClass( 'hover', 150);
 
-   }  
+   }
 
 }, function() {
 
@@ -819,20 +813,20 @@ $('.iconBoxV3 a').hover(function() {
         $('i', this).css('-webkit-transform', 'rotateZ(0deg)');
         $('i', this).css('-moz-transform', 'rotateZ(0deg)');
         $('i', this).css('-o-transform', 'rotateZ(0deg)');
-        $('i', this).css('transform', 'rotateZ(0deg)'); 
+        $('i', this).css('transform', 'rotateZ(0deg)');
 
     }else{
 
         $(this).stop(false, true).toggleClass( 'hover', 150);
-    }  
-    
+    }
+
 });
 
 
 if($('.scrollMenu').length){
 
 
-        if($('.localscroll').length){    
+        if($('.localscroll').length){
             $('.localscroll').localScroll({
                 lazy: true,
                 offset: {
@@ -847,7 +841,7 @@ if($('.scrollMenu').length){
             isMobile = true;
         }
 
-       
+
         if (isMobile === false && ($('#paralaxSlice1').length  ||isMobile === false &&  $('#paralaxSlice2').length ))
         {
 
@@ -863,7 +857,7 @@ if($('.scrollMenu').length){
             });
 
         }
-  
+
 
     }
 
@@ -884,9 +878,9 @@ function nekoAnimAppear(){
         var $this = $(this);
 
         $this.addClass("nekoAnim-invisible");
-        
+
         if($(window).width() > 767) {
-            
+
             $this.appear(function() {
 
                 var delay = ($this.data("nekodelay") ? $this.data("nekodelay") : 1);
@@ -970,7 +964,7 @@ jQuery(function() {
         },
         onkeyup: false,
 
-        
+
         rules: {
             name: {
                 required: true,
@@ -1014,7 +1008,7 @@ function animateTxt(curSlide, action){
         $('.slideN'+curSlide+':not([class*=clone])>.caption').css('display', 'block');
 
         $('.slideN'+curSlide+':not([class*=clone])>.caption>div').each(function( ) {
-            if(Modernizr.csstransitions) { 
+            if(Modernizr.csstransitions) {
 
                 $(this).css('-webkit-animation-delay', animaDelay+'s');
                 $(this).css('-moz-animation-delay', animaDelay+'s');
@@ -1047,7 +1041,7 @@ function animateTxt(curSlide, action){
         $('.slideN'+curSlide+':not([class*=clone])>.caption').css('display', 'none');
 
         $('.slideN'+curSlide+':not([class*=clone])>.caption>div').each(function( ) {
-         if(Modernizr.csstransitions) { 
+         if(Modernizr.csstransitions) {
 
              $(this).removeClass($(this).attr('data-animation')).removeClass('animated').hide();
 
@@ -1076,7 +1070,7 @@ function appendBootstrap() {
     script.type = "text/javascript";
     script.src = "http://maps.google.com/maps/api/js?sensor=false&callback=initialize";
     document.body.appendChild(script);
-}    
+}
 
 
 
@@ -1094,11 +1088,11 @@ function initialize(id) {
         //point number 2
         ['Best town ever', 'Santa Cruz', 36.986021, -122.02216399999998],
 
-        //point number 3 
+        //point number 3
         ['Located in the Midwestern United States', 'Kansas'],
 
         //point number 4
-        ['I\'ll definitly be there one day', 'Chicago', 41.8781136, -87.62979819999998] 
+        ['I\'ll definitly be there one day', 'Chicago', 41.8781136, -87.62979819999998]
     ];
 
 /*** DON'T CHANGE ANYTHING PASSED THIS LINE ***/
@@ -1190,7 +1184,7 @@ var map = new google.maps.Map(document.getElementById(id), {
             }
         ]
     },
-    
+
     {
         "featureType": "landscape.natural",
         "elementType": "geometry.fill",
@@ -1244,7 +1238,7 @@ var marker, i;
 var bounds = new google.maps.LatLngBounds();
 var infowindow = new google.maps.InfoWindow({ content: "loading..." });
 
-for (i = 0; i < locations.length; i++) { 
+for (i = 0; i < locations.length; i++) {
 
 
     if(locations[i][2] !== undefined && locations[i][3] !== undefined){
@@ -1254,7 +1248,7 @@ for (i = 0; i < locations.length; i++) {
 
             marker = new google.maps.Marker({
                 position: myLatlng,
-                icon:image,  
+                icon:image,
                 title: overlayTitle,
                 map: map
             });
@@ -1294,7 +1288,7 @@ for (i = 0; i < locations.length; i++) {
 
                 marker = new google.maps.Marker({
                     position: myLatlng,
-                    icon:image,  
+                    icon:image,
                     title: overlayTitle,
                     map: map
                 });
@@ -1326,7 +1320,7 @@ for (i = 0; i < locations.length; i++) {
 
 /* ANALYTICS */
 function gaSSDSLoad (acct) {
-  "use strict";  
+  "use strict";
   var gaJsHost = (("https:" === document.location.protocol) ? "https://ssl." : "http://www."),
   pageTracker,
   s;
@@ -1355,7 +1349,7 @@ document.getElementsByTagName('head')[0].appendChild(s);
 /** FULLSCREEN IMAGE **/
 
 function fullscreenImage(){
-          $('#homeFullScreen').css({height:$(window).height()})   
+          $('#homeFullScreen').css({height:$(window).height()})
 }
 
 $(window).on("resize",function(e){
@@ -1364,10 +1358,10 @@ $(window).on("resize",function(e){
             {
                 fullscreenImage();
             }
-    
+
 });
 
-         
+
 
 
 
