@@ -750,7 +750,7 @@ Perso salesfetch landing
 
 .iphone .animationWrapper .animation {
 	width: 10px;
-	height: 100%;
+	height: 100.7%;
 	margin: 0 auto;
 	background: white;
 	overflow: hidden;
@@ -762,9 +762,6 @@ Perso salesfetch landing
 	height: 100%;
 	position: absolute;
 	top: 0;
-	/*left: -28%;*/
-	-webkit-animation: animate 15s infinite;
-	-moz-animation: animate 15s infinite;
 }
 
 /* Chrome, Safari, Opera */
@@ -801,13 +798,13 @@ Perso salesfetch landing
 
 
 .iphone .animationWrapper .animation .screen {
-	width: 20%;
+	width: 19.91%;
 	height: 100%;
 	float: left;
 }
 
 .iphone .animationWrapper .animation .screen:nth-child(1) {
-	background: url('../images/carousel/screen1.png') no-repeat;
+	background: url('../images/carousel/screen3.png') no-repeat;
 	background-size: 100% auto;
 }
 
@@ -1149,6 +1146,12 @@ ul.socialNetwork li {display:inline-block; list-style-type: none;}
 /*** end pricing table ***/
 
 /*** responsive video ***/
+
+.col-video {
+	padding: 40px;
+	text-align: center;
+}
+
 .videoWrapper {
 	position: relative;
     padding-bottom: 54%;
