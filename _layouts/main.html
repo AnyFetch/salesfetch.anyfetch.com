@@ -39,7 +39,7 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-right" data-offset=150>
 
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container">
@@ -56,42 +56,19 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
 				<ul class="nav navbar-nav">
-					{% if page.path == "index.html" %}
-					<li class="active"><a href="/" class="navbar-title">Home</a></li>
-					{% else %}
-					<li><a href="/" class="navbar-title">Home</a></li>
-					{% endif %}
-					{% if page.path == "use.html" %}
-					<li class="hidden-sm active"><a href="/use.html" class="navbar-title">Use</a></li>
-					{% else %}
-					<li class="hidden-sm"><a href="/use.html" class="navbar-title">Use</a></li>
-					{% endif %}
-					{% if page.path == "integrate.html" %}
-					<li class="hidden-sm active"><a href="/integrate.html" class="navbar-title">Integrate</a></li>
-					{% else %}
-					<li class="hidden-sm"><a href="/integrate.html" class="navbar-title">Integrate</a></li>
-					{% endif %}
-					{% if page.path == "develop.html" %}
-					<li class="hidden-sm active"><a href="/develop.html" class="navbar-title">Develop</a></li>
-					{% else %}
-					<li class="hidden-sm"><a href="/develop.html" class="navbar-title">Develop</a></li>
-					{% endif %}
-					{% if page.path == "about-us.html" %}
-					<li class="hidden-sm active"><a href="/about-us.html" class="navbar-title">About us</a></li>
-					{% else %}
-					<li class="hidden-sm"><a href="/about-us.html" class="navbar-title">About us</a></li>
-					{% endif %}
-					{% if page.path == "use.html" or page.path == "integrate.html" or page.path == "develop.html" or page.path == "about-us.html" %}
-					<li class="visible-sm dropdown active">
-					{% else %}
+					<li class="hidden-sm"><a href="#home" class="navbar-title">Home</a></li>
+					<li class="hidden-sm"><a href="#un" class="navbar-title">Un</a></li>
+					<li class="hidden-sm"><a href="#deux" class="navbar-title">Deux</a></li>
+					<li class="hidden-sm"><a href="#trois" class="navbar-title">Trois</a></li>
+					<li class="hidden-sm"><a href="#videos" class="navbar-title">Vidéos</a></li>
 					<li class="visible-sm dropdown">
-					{% endif %}
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="/use.html">Use</a></li>
-							<li><a href="/integrate.html">Integrate</a></li>
-							<li><a href="/develop.html">Develop</a></li>
-							<li><a href="/about-us.html">About us</a></li>
+							<li><a href="#home" class="navbar-title">Home</a></li>
+							<li><a href="#un" class="navbar-title">Un</a></li>
+							<li><a href="#deux" class="navbar-title">Deux</a></li>
+							<li><a href="#trois" class="navbar-title">Trois</a></li>
+							<li><a href="#videos" class="navbar-title">Vidéos</a></li>
 						</ul>
 					</li>
 					<li><a href="get-started.html" class="btn btn-default btn-lg"><span class="network-name">Get the App</span></a></li>
