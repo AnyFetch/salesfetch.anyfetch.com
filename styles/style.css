@@ -1,0 +1,254 @@
+/* ---------------------------------------------------------------
+						Misc
+--------------------------------------------------------------- */
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	text-align: justify;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.content {
+	margin-top: 100px;
+}
+
+hr {
+	width: 60%;
+	height: 3px;
+}
+
+h1.white {
+	color: #fff;
+	text-align: center;
+}
+
+li {
+	font-weight: 300;
+}
+
+a {
+	color: #349CC5;
+}
+
+.btn {
+	background-color: #F98D33;
+	color: #fff;
+	border-color: #fff;
+}
+
+.btn:hover {
+	background-color: #FCAD6C;
+	color: #fff;
+	border-color: #fff;
+}
+
+.intro-svg {
+	height: 100px;
+	max-width: 100px;
+}
+
+.center {
+	text-align: center;
+}
+
+/*.navbar {
+	min-height: 80px;
+}*/
+
+.navbar-default {
+	background-color: #fff;
+}
+
+.navbar-nav {
+	margin-top: 15px;
+}
+
+.navbar img {
+	width: 50px;
+	height: 50px;
+}
+
+/* Navbar Title*/
+.navbar-default .navbar-brand {
+	color: #16A9E2;
+	font-weight: 500;
+	padding-bottom: 10px;
+	font-size: 30px;
+	font-weight: 200;
+}
+
+/* Navbar menus*/
+.navbar-default .navbar-nav>li>a {
+	color: #16A9E2;
+	font-size: 15px;
+}
+
+/* Button in navbar */
+.navbar-default .navbar-nav>li>.btn {
+	margin-left: 10px;
+	margin-top: 15px;
+	padding-top: 15px;
+	color: #777;
+	background-color: #fff;
+	border-color: #888;
+	height: 50px;
+}
+
+.navbar-collapse, .navbar-header {
+	margin-top: -15px;
+}
+
+.navbar-default .navbar-nav>li>.btn:hover {
+	background-color: #F98D33;
+	color: #fff;
+	border-color: #F98D33;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	color: #00A8E5;
+	background-color: #fff;
+	font-weight: 500;
+	border-bottom: 2px solid;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #777;
+	background-color: #fff;
+	font-weight: 500;
+	border-bottom: 2px solid;
+
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+	color: #fff;
+	background-color: #00A8E5;
+}
+
+.source-icon {
+	max-height: 40px;
+	max-width: 80%;
+	margin-bottom: 40px;
+}
+
+.dropdown-menu>li>a {
+	color: #00A8E5;
+}
+.intro-header {
+	padding-top: 120px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 170px;
+	margin-bottom: 50px;
+	color: #f8f8f8;
+	background-color: #14A8E1;
+	background: url(../images/svg/anyfetch_icon_raw.svg) no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
+	background-size: 13%, cover;
+	text-align: center;
+}
+
+.intro-header.min {
+	height: 200px;
+	padding-top: 0px;
+	background-size: 10%, cover;
+	text-align: left;
+}
+
+.intro-header.min>div>div>div>div>h2 {
+	text-align: left;
+	color: #fff;
+	font-weight: 300;
+}
+
+.intro-message {
+	position: relative;
+	padding-top: 5%;
+	text-align: left;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 5em;
+	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
+}
+
+.intro-divider {
+	width: 350px;
+	margin-left: 0px;
+}
+
+.intro-message > h3 {
+	/*text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);*/
+}
+
+#iphone-preview {
+	padding-top: 60px;
+	text-align: center;
+}
+
+#iphone-preview img {
+	max-width: 100%;
+	width: 500px;
+}
+
+
+@media (max-width: 991px) {
+	.intro-message {
+		padding-bottom: 10%;
+		text-align: center;
+	}
+
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+
+	#iphone-preview {
+		padding-top: 0px;
+	}
+}
+
+footer {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+
+h2 {
+	text-align: center;
+	color: #16A9E2;
+	margin-bottom: 20px;
+}
+
+p {
+	font-weight: 200;
+}
+
+.video {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.container img {
+	max-width: 80%;
+}
+
+.content-section {
+	margin-bottom: 40px;
+}
+
+.content-section hr {
+	margin-bottom: 40px;
+}
