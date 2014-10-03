@@ -19,7 +19,6 @@ h4 {
 	font-size: 20px;
 	font-style: normal;
 	font-variant: normal;
-	height: 145px;
 	line-height: 28.875px;
 	margin-top: 0px;
 }
@@ -576,4 +575,13 @@ a.list-group-item:hover {
 
 .intro-message h1 {
 	margin-top: 35px;
+}
+
+.feature-area h2 {
+	margin-top: 1em;
+}
+
+.feature-area h4 {
+	text-align:center;
+	margin: 1em 0;
 }
