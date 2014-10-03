@@ -12,16 +12,16 @@ body, h1, h2, h3, h5, h6 {
 	font-weight: 300;
 }
 
-h4{
+h4 {
 	font-family: "Helvetica Neue";
-font-weight: 300;
-color: #677277;
-font-size: 20px;
-font-style: normal;
-font-variant: normal;
-height: 145px;
-line-height: 28.875px;
-margin-top: 0px;
+	font-weight: 300;
+	color: #677277;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	height: 145px;
+	line-height: 28.875px;
+	margin-top: 0px;
 }
 
 body {
@@ -56,27 +56,6 @@ li {
 
 a {
 	color: #349CC5;
-}
-
-.btn {
-	background-color: #F98D33;
-	color: #fff;
-	border-color: #fff;
-}
-
-.btn:hover {
-	background-color: #FCAD6C;
-	color: #fff;
-	border-color: #fff;
-}
-
-.btn-form {
-	border-color: #F98D33;
-}
-
-.intro-svg {
-	height: 100px;
-	max-width: 100px;
 }
 
 .center {
@@ -591,191 +570,10 @@ a.list-group-item:hover {
 	box-shadow: 0px 0px 3px #777;
 }
 
-.window .frames .frame img {
-	width: 100%;
+.icon-banners {
+	margin: 25px 0;
 }
 
-.window .frames .frame:nth-child(1) {
-	-webkit-animation: first 8s infinite;
-	-moz-animation: first 8s infinite;
-}
-
-.window .frames .frame:nth-child(2) {
-	-webkit-animation: second 8s infinite;
-	-moz-animation: second 8s infinite;
-}
-
-.window .frames .frame:nth-child(3) {
-	-webkit-animation: third 8s infinite;
-	-moz-animation: third 8s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes first
-{
-	0% { opacity: 1; }
-	25% {opacity: 1;}
-	30% { opacity: 0; }
-	95% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes second
-{
-	0% { opacity: 0; }
-	25% {opacity: 0;}
-	30% { opacity: 1; }
-	55% { opacity: 1; }
-	60% { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes third
-{
-	0% { opacity: 0; }
-	55% {opacity: 0;}
-	60% { opacity: 1; }
-	95% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-/* Chrome, Safari, Opera */
-@-moz-keyframes first
-{
-	0% { opacity: 1; }
-	25% {opacity: 1;}
-	30% { opacity: 0; }
-	95% { opacity: 0; }
-	100% { opacity: 1; }
-}
-
-/* Chrome, Safari, Opera */
-@-moz-keyframes second
-{
-	0% { opacity: 0; }
-	25% {opacity: 0;}
-	30% { opacity: 1; }
-	55% { opacity: 1; }
-	60% { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-/* Chrome, Safari, Opera */
-@-moz-keyframes third
-{
-	0% { opacity: 0; }
-	55% {opacity: 0;}
-	60% { opacity: 1; }
-	95% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-
-/* Animation */
-
-.animation {
-	margin: 20px 0 0 0;
-	position: relative;
-}
-
-.animation .frames .frame img {
-	width: 100%;
-}
-
-.animation .frames .frame:nth-child(1) {
-	-webkit-animation: anim1 15s infinite;
-	-moz-animation: anim1 15s infinite;
-}
-
-.animation .frames .frame:nth-child(2) {
-	-webkit-animation: anim2 15s infinite;
-	-moz-animation: anim2 15s infinite;
-}
-
-.animation .frames .frame:nth-child(3) {
-	-webkit-animation: anim3 15s infinite;
-	-moz-animation: anim3 15s infinite;
-}
-
-.animation .frames .frame:nth-child(4) {
-	-webkit-animation: anim4 15s infinite;
-	-moz-animation: anim4 15s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes anim1
-{
-	0% { opacity: 1; }
-	20% {opacity: 1;}
-	25% { opacity: 0; }
-	95% { opacity: 0; }
-	96% { opacity: 1; }
-	100% { opacity: 1; }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes anim2
-{
-	0% { opacity: 0; }
-	20% {opacity: 0;}
-	21% { opacity: 1; }
-	45% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes anim3
-{
-	0% { opacity: 0; }
-	45% {opacity: 0;}
-	46% { opacity: 1; }
-	70% { opacity: 1; }
-	75% { opacity: 0; }
-	100% { opacity: 0; }
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes anim4
-{
-	0% { opacity: 0; }
-	70% {opacity: 0;}
-	71% { opacity: 1; }
-	95% { opacity: 1; }
-	100% { opacity: 0; }
-}
-
-.carousel .item {-webkit-transition: opacity 1s; -moz-transition: opacity 1s; -ms-transition: opacity 1s; -o-transition: opacity 1s; transition: opacity 1s;}
-.carousel .active.left {left:0;opacity:0;z-index:2;}
-.carousel .next {left:0;opacity:1;z-index:1;}
-
-.carousel-indicators {
-	top: -10px;
-}
-
-.carousel-indicators li {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	padding-top: 2px;
-	text-indent: 0px;
-	color: #00A7E4;
-	border-color: #00A7E4;
-}
-
-.carousel-indicators .active {
-	width: 25px;
-	height: 25px;
-	border-radius: 50%;
-	padding-top: 2px;
-	text-indent: 0px;
-	color: #fff;
-	background-color: #00A7E4;
-}
-
-.carousel-inner>.item>img {
-	max-width: 80%;
-	margin: auto;
+.intro-message h1 {
+	margin-top: 35px;
 }
