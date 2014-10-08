@@ -148,6 +148,12 @@ a {
 	padding-top: 50px;
 }
 
+@media (max-width: 767px) {}
+	.use-case-thumbnail {
+		padding-top: 25px;
+	}
+}
+
 .use-case-thumbnail > img {
 	max-width: 100%;
 }
@@ -163,9 +169,8 @@ a {
 }
 
 .intro-header {
-	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
-	margin-top: 50px;
+	margin-top: 70px;
 	color: #f8f8f8;
 	background-color: #14A8E1;
 	background: url(../images/svg/anyfetch_icon_raw.svg) no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;
@@ -175,9 +180,9 @@ a {
 }
 
 .intro-salesfetch {
-	padding-top: 15px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
-	margin-top: 50px;
+	padding-top: 20px;
+	margin-top: 70px;
 	/*background-color: #14A8E1;*/
 	/*background: url(../images/svg/anyfetch_icon_raw.svg) no-repeat bottom right, url(../images/svg/banner.svg) no-repeat center center;*/
 	background-size: 20%, cover;
@@ -339,7 +344,7 @@ a {
 		padding-left: 0px;
 	}
 	.intro-salesfetch {
-	height: 600px;
+		height: 550px;
 	}
 }
 
@@ -348,6 +353,10 @@ a {
 		margin: 0;
 		text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 		font-size: 3em;
+	}
+
+	.content {
+		margin-top: 0;
 	}
 
 	ul.banner-social-buttons > li {
@@ -365,6 +374,9 @@ a {
 	}
 	.intro-phone {
 		display: none;
+	}
+	.intro-salesfetch {
+		height: auto;
 	}
 }
 
