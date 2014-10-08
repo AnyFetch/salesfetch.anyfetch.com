@@ -75,8 +75,8 @@ a {
 }
 
 .navbar img {
-	width: 50px;
-	height: 50px;
+	width: 1.7em;
+	height: 1.7em;
 }
 
 /* Navbar Title*/
@@ -84,7 +84,7 @@ a {
 	color: #16A9E2;
 	font-weight: 500;
 	padding-bottom: 10px;
-	font-size: 30px;
+	font-size: 2.1em;
 	font-weight: 200;
 }
 
