@@ -79,11 +79,16 @@ a {
 	height: 1.7em;
 }
 
+.navbar-default .navbar-brand:hover {
+	color: #16A9E2;
+	opacity: 0.9;
+}
+
 /* Navbar Title*/
 .navbar-default .navbar-brand {
 	color: #16A9E2;
 	font-weight: 500;
-	padding-bottom: 10px;
+	line-height: 2.2em;
 	font-size: 2.1em;
 	font-weight: 200;
 }
