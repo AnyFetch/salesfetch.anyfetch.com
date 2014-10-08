@@ -61,16 +61,17 @@ a {
 	text-align: center;
 }
 
-/*.navbar {
-	min-height: 80px;
-}*/
+.navbar,
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 70px;
+  height: 70px;
+  min-height: 70px;
+  padding-top: 0;
+}
 
 .navbar-default {
 	background-color: #fff;
-}
-
-.navbar-nav {
-	margin-top: 15px;
 }
 
 .navbar img {
@@ -102,10 +103,6 @@ a {
 	background-color: #fff;
 	border-color: #888;
 	height: 50px;
-}
-
-.navbar-collapse, .navbar-header {
-	margin-top: -15px;
 }
 
 .navbar-default .navbar-nav>li>.btn:hover {
