@@ -248,8 +248,7 @@ a {
 }
 @media (max-width: 767px) {
 	.intro-message {
-		padding-bottom: 15%;
-		text-align: center;
+		padding-bottom: 5%;
 	}
 
 	.intro-message > h1 {
@@ -372,9 +371,6 @@ a {
 
 	footer {
 		text-align: center;
-	}
-	.intro-phone {
-		display: none;
 	}
 	.intro-salesfetch {
 		height: auto;
