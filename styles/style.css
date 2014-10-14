@@ -247,6 +247,10 @@ a {
 	}
 }
 @media (max-width: 767px) {
+	.hidden-mobile {
+		display: none;
+	}
+
 	.intro-message {
 		padding-bottom: 5%;
 	}
