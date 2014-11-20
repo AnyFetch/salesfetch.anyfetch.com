@@ -410,6 +410,7 @@ h2 {
 	text-align: center;
 	color: #16A9E2;
 	margin-bottom: 20px;
+	text-transform: capitalize;
 }
 
 p {
