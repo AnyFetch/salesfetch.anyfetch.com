@@ -1,1 +1,1 @@
-Sitemap: http://anyfetch.com/sitemap.xml
+Sitemap: http://salesfetch.anyfetch.com/sitemap.xml
